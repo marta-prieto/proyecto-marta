@@ -1,0 +1,28 @@
+{
+  "name": "proyecto-marta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "../script.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marta-prieto/proyecto-marta.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marta-prieto/proyecto-marta/issues"
+  },
+  "homepage": "https://github.com/marta-prieto/proyecto-marta#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
