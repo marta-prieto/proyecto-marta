@@ -12,7 +12,6 @@ app.get("/:web/:page?", async(req, res) => {
         const { web, page = 1 } = req.params
         const { [web]: myWeb} = config
         const response = await axios.get(`${myWeb.url}?${myWeb.pageParam}=${page}`);
-        console.log(response)
         return res.status(200).send(response.data);
     } catch ({ message }) {
         console.log(message)
