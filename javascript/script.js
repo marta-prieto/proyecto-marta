@@ -1,5 +1,4 @@
 function getApis(url = '', data = {}) {
-
   const response = fetch('https://adopcioneslamadrilena.org/', {
 
   });
