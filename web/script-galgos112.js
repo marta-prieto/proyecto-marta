@@ -1,12 +1,12 @@
 //FUNCION BAASGALGO
 
 
-function getFetch() {
+function getFetch112() {
   console.log('getFuncion');
 
-  fetch('http://localhost:5000/madrilenia')
+  fetch('http://localhost:5000/galgos112')
     .then(function(response) {
-      console.log('response', response);
+      console.log('response-112', response);
       // The API call was successful!
       return response.text();
     })
@@ -17,7 +17,7 @@ function getFetch() {
       var doc = parser.parseFromString(html, 'text/html');
 
       //array de cards
-      var dogs = doc.querySelectorAll('.card');
+      var dogs = doc.querySelectorAll('.m_bottom_20.clearfix');
 
       console.log('doc', doc);
       console.log('dogs', dogs);
@@ -32,21 +32,21 @@ function getFetch() {
         //pinto CADA UNA de las cards
         console.log(dogs[i]);
         //conseguir la información de cada perro
-        var name = dogs[i].querySelector('.card-title').textContent;
-        var img = dogs[i].querySelector('.card-img-top').src;
-        var age = dogs[i].querySelector('.car_listado-edad').textContent;
-        var gender = dogs[i].querySelector('.car_listado-sexo').textContent;
+        var name = dogs[i].querySelector('.m_bottom_5').textContent;
+        var img = dogs[i].querySelector('.tr_all_long_hover').src;
+        var age = dogs[i].querySelector('.f_size_medium.m_bottom_10').textContent;
+        //var gender = dogs[i].querySelector('.car_listado-sexo').textContent;
 
         console.log('name', name);
         console.log('name', img);
         console.log('name', age);
-        console.log('name', gender);
+        //console.log('name', gender);
         //OBJETO que guarda la información de cada card, dentro del for para recorrer cada una de las cards
         var newDogList = {
           name: name,
           img: img,
-          age: age,
-          gender: gender
+          age: age
+
         };
         console.log('newDogList', newDogList);
         //añadir al array cada uno de los objetos
@@ -70,10 +70,10 @@ function getFetch() {
               <h3 class="dog-title" data-name="${dog.name}">${dog.name}</h3>
                 <img class="img-dog" src="${dog.img}">
                 <p class="dog-age" data-name="${dog.age}">${dog.age}</p>
-                <p class="dog-gender" data-name="${dog.gender}">${dog.gender}</p>
+              
               </li>`;
       }
-      document.querySelector('ul').innerHTML = resultItems;
+      document.querySelector('.ul-dogs-galgos112').innerHTML = resultItems;
 
 
     })
@@ -82,5 +82,5 @@ function getFetch() {
       console.error('Something went wrong.', err);
     });
 }
-var animalTitle = document.querySelector('.animal-title');
-animalTitle.addEventListener('click', getFetch);
+var animalTitle = document.querySelector('.animal-title.second-dog');
+animalTitle.addEventListener('click', getFetch112);

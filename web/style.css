@@ -59,6 +59,7 @@ h3 {
 
 .main-container {
     display: flex;
+    flex-direction: column;
 }
 
 .center-section {
@@ -138,6 +139,11 @@ li.get-list {
 
 h3 {
     margin-top: 50px;
+}
+
+.dogs-cards-container {
+    display: flex;
+    flex-direction: column;
 }
 
 

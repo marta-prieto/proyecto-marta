@@ -82,5 +82,5 @@ function getFetch() {
       console.error('Something went wrong.', err);
     });
 }
-var animalTitle = document.querySelector('.animal-title');
+var animalTitle = document.querySelector('.animal-title.dog-title');
 animalTitle.addEventListener('click', getFetch);
