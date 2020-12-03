@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+a {
+    border: 2px solid rgb(94, 177, 159);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    margin: 20px 40px;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: rgb(94, 177, 159);
+    color: #fff;
+}
+
+.contact-name:hover {}
+
+img {
+    width: 100%;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.header-box {
+    height: 100px;
+    background-color: rgb(94, 177, 159);
+    border-radius: 8px;
+}
+
+.center-section {
+    border: 2px solid rgb(160, 159, 159);
+    margin-top: 50px;
+    border-radius: 16px;
+    background-color: rgb(248, 241, 232);
+    height: 300px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    font-size: 50px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.center-section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+    width: auto;
+    min-width: 300px;
+}
+
+.animal-container {
+    border: 2px solid rgb(160, 159, 159);
+    margin: 50px;
+    border-radius: 16px;
+    height: auto;
+    min-width: 400px;
+    background-color: rgb(248, 241, 232);
+}
+
+.animal-container.get-list {}
+
+.dog-container {}
+
+.cat-container {}
+
+.animal-title {
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(160, 159, 159);
+    color: #fff;
+    background-color: rgb(94, 177, 159);
+    border-radius: 12px;
+    margin: 15px 50px;
+    padding: 20px;
+}
+
+.animal-title:hover {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.animal-title .get-list {
+    display: none;
+}
+
+.dog-title {}
+
+.cat-title {}
+
+section li {}
+
+li {
+    /*display: none;*/
+    margin: 40px 50px 0 15px;
+    padding: 20px;
+    list-style: none;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+li.get-list {
+    display: block;
+}
+
+h3 {
+    margin-top: 50px;
+}
