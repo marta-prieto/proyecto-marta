@@ -57,11 +57,11 @@ function getFetch() {
 
 
       //recojo cada objeto en li
-      var dogsList = document.querySelectorAll('li');
+      /*var dogsList = document.querySelectorAll('li');
       for (i = 0; i < dogsList.length; i++) {
         var ref = document.querySelector('li');
         ref.insertAdjacentHTML('afterbegin', newDogList);
-      }
+      }*/
       var resultItems = '';
 
       for (const dog of arrayDogs) {
