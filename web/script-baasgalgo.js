@@ -1,3 +1,6 @@
+//FUNCION BAASGALGO
+
+
 function getFetch() {
   console.log('getFuncion');
 
@@ -63,12 +66,12 @@ function getFetch() {
 
       for (const dog of arrayDogs) {
         resultItems += `
-            <li class="dog__list">
-            <h3 class="dog-title" data-name="${dog.name}">${dog.name}</h3>
-              <img class="img-dog" src="${dog.img}">
-              <p class="dog-age" data-name="${dog.age}">${dog.age}</p>
-              <p class="dog-gender" data-name="${dog.gender}">${dog.gender}</p>
-            </li>`;
+              <li class="dog__list">
+              <h3 class="dog-title" data-name="${dog.name}">${dog.name}</h3>
+                <img class="img-dog" src="${dog.img}">
+                <p class="dog-age" data-name="${dog.age}">${dog.age}</p>
+                <p class="dog-gender" data-name="${dog.gender}">${dog.gender}</p>
+              </li>`;
       }
       document.querySelector('ul').innerHTML = resultItems;
 
