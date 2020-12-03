@@ -82,5 +82,5 @@ function getFetch112() {
       console.error('Something went wrong.', err);
     });
 }
-var animalTitle112 = document.querySelector('.animal-title.second-dog');
+var animalTitle112 = document.querySelector('.get-collapsable.second-dog');
 animalTitle112.addEventListener('click', getFetch112);

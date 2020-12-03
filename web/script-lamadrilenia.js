@@ -3,7 +3,8 @@
 
 function getFetch() {
   console.log('getFuncion');
-
+  var dogsList = document.querySelector('ul');
+  dogsList.style.display = 'grid';
   fetch('http://localhost:5000/madrilenia')
     .then(function(response) {
       console.log('response', response);
@@ -81,6 +82,23 @@ function getFetch() {
       // There was an error
       console.error('Something went wrong.', err);
     });
+
+  hideDogList();
 }
-var animalTitle = document.querySelector('.animal-title.dog-title');
+var animalTitle = document.querySelector('.get-collapsable');
 animalTitle.addEventListener('click', getFetch);
+
+
+function hideDogList() {
+  var animalTitle = document.querySelector('.get-collapsable-up');
+  var dogsList = document.querySelector('ul');
+  var resultItems = '';
+  console.log('hideDogList');
+
+  animalTitle.addEventListener('click', function() {
+    console.log('click-hide-list');
+    dogsList.style.display = 'none';
+
+  });
+
+}
