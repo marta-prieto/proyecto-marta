@@ -1,11 +1,10 @@
-//FUNCION BAASGALGO
+//FUNCION BAASGALGO-pag 2
 
+/*
+function getFetch112Page2() {
+  console.log('getFuncion112-page2');
 
-function getFetch112() {
-  console.log('getFuncion112pag1');
-
-
-  fetch('http://localhost:5000/galgos112/0')
+  fetch('http://localhost:5000/galgos112/1')
     .then(function(response) {
       console.log('response-112', response);
       // The API call was successful!
@@ -63,7 +62,8 @@ function getFetch112() {
         var ref = document.querySelector('li');
         ref.insertAdjacentHTML('afterbegin', newDogList112);
       }*/
-      var resultItems112 = '';
+
+/* var resultItems112 = '';
 
       for (const dog112 of arrayDogs) {
         resultItems112 += `
@@ -74,7 +74,7 @@ function getFetch112() {
               
               </li>`;
       }
-      document.querySelector('.ul-dogs-galgos112').innerHTML = resultItems112;
+      document.querySelector('.ul-dogs-galgos112-page-2').innerHTML = resultItems112;
 
 
     })
@@ -83,5 +83,5 @@ function getFetch112() {
       console.error('Something went wrong.', err);
     });
 }
-var animalTitle112 = document.querySelector('.get-collapsable-112.second-dog');
-animalTitle112.addEventListener('click', getFetch112);
+var animalTitle112 = document.querySelector('.get-collapsable-112-page-2');
+animalTitle112.addEventListener('click', getFetch112Page2);*/
